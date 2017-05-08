@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes Application</title>
+    <link rel="stylesheet" href="css/main.css">
+	<script src="js/note.js"></script>
+	<script src="js/controller.js"></script>	
+</head>
+<body>
+
+<header id="header">
+	<h1 class="logo">Notes Application</h1>
+</header>
+
+	<nav id="navigation">
+			<ul>
+				<li><a class="button" href="javaScript:void();" id="add-notes-option">Add New</a></li>
+				<li><a class="button" href="javaScript:void();" id="delete-all-option">Del All</a></li>
+			</ul>
+	</nav>
+	
+	<div class="content" id="notes-section">
+			<ul>
+
+			</ul>
+	</div>
+	
+
+<div id="form-box">
+    <fieldset>
+        <legend>Add New Note</legend>
+        
+			<textarea id="noteName" placeholder="Type Notes"></textarea>
+			<span id="noteNameError"></span>
+			<select name="color" id="color">
+							 <option value="default" selected>Select Color</option>	
+							 <option value="red">Red</option>
+							 <option value="green">Green</option>
+							 <option value="blue">Blue</option>
+							 <option value="orange">Orange</option>
+			</select>
+			<input type="hidden" id="nid" name="nid" value="0" />
+			<button id="save-button">Save</button>
+			<button id="delete-button">Delete</button>
+			<button id="cancel-button">Cancel</button>
+    </fieldset>
+</div>	    
+</body>
+</html>
